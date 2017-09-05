@@ -11,9 +11,9 @@ import sys
 def notify_by_email():
     COMMASPACE = ', '
 
-    HOST = '<HOES URL GOES HERE>'
-    SENDER = 'SENDER@SENDER.COM'
-    RECIPIENTS = ['RECEIVER1@RECEIVER.COM', 'RECEIVER2@RECEIVER.COM']
+    HOST = '<HOST URL GOES HERE>'
+    SENDER = '<SENDER@SENDER.COM>'
+    RECIPIENTS = ['<RECEIVER1@RECEIVER.COM>', '<RECEIVER2@RECEIVER.COM>']
     TEXT = '<TEXT BODY GOES HERE>\n\n\n\n'
 
     # Create the enclosing (outer) message
@@ -25,7 +25,7 @@ def notify_by_email():
     outer.attach(MIMEText(TEXT))
 
     # Attachments
-    attachment = '<ATTACH_FILE/PATH/>'
+    attachment = '<PATH/TO/ATTACH_FILE>'
 
     try:
         with open(attachment, 'rb') as fp:
