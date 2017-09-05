@@ -14,4 +14,4 @@ notify.notify_by_email()
 
 ##### Note: 
 
-Update the capitalized parts in the script. 
+Update the capitalized parts between "<" and ">" in `notify.py`
